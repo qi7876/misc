@@ -101,12 +101,12 @@ plt.plot(
 )
 plt.minorticks_on()
 # Customize major ticks (control how many ticks you want)
-plt.gca().xaxis.set_major_locator(ticker.MaxNLocator(10))
-plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(8))
+plt.gca().xaxis.set_major_locator(ticker.MaxNLocator(6))
+plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(10))
 
 # Customize minor ticks (control minor ticks frequency)
-plt.gca().xaxis.set_minor_locator(ticker.AutoMinorLocator(15))
-plt.gca().yaxis.set_minor_locator(ticker.AutoMinorLocator(8))
+plt.gca().xaxis.set_minor_locator(ticker.AutoMinorLocator(8))
+plt.gca().yaxis.set_minor_locator(ticker.AutoMinorLocator(10))
 plt.grid(which="both")  # Enable grid for both major and minor ticks
 plt.grid(
     which="minor", linestyle=":", linewidth="0.5", color="gray"
