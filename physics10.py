@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 import numpy as np
 from matplotlib import rcParams
-import matplotlib.ticker as ticker
 
 rcParams["font.family"] = "Heiti TC"  # For Chinese characters
 rcParams["axes.unicode_minus"] = False
@@ -254,10 +254,8 @@ for i in range(len(I_m_4)):
     H_c_0.append(H_c_calculator(I_m_4[i], B_g_4[i]))
     B_c_0.append(B_c_calculator(B_g_4[i]))
 
-    print(f"I = {i}, H_c = {H_c_0[-1]}, B_c = {B_c_0[-1]}")
+    print(f"I = {I_m_4[i]}, H_c = {round(H_c_0[-1], 2)}, B_c = {round(B_c_0[-1], 2)}")
 
-print("H_c_0 =", H_c_0)
-print("B_c_0 =", B_c_0)
 print("=====================================")
 
 for i in range(len(I_m_5)):
@@ -266,10 +264,8 @@ for i in range(len(I_m_5)):
     B_c_1.append(B_c_calculator(B_g_5[i]))
     counter += 1
 
-    print(f"I = {i}, H_c = {H_c_1[-1]}, B_c = {B_c_1[-1]}")
+    print(f"I = {I_m_5[i]}, H_c = {round(H_c_1[-1], 2)}, B_c = {round(B_c_1[-1], 2)}")
 
-print("H_c_1 =", H_c_1)
-print("B_c_1 =", B_c_1)
 print("=====================================")
 
 
